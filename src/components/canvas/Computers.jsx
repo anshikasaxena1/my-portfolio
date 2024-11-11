@@ -2,8 +2,6 @@ import {Suspense, useEffect, useState} from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei'
 import CanvasLoader from '../Loader'
-import { tr } from 'framer-motion/client'
-import { set } from 'express/lib/response'
 
 const Computers =( {isMobile})=>{
   
@@ -63,6 +61,7 @@ const ComputersCanvas =()=>{
 
   return(
     <Canvas
+    
       frameloop='demand'
       shadows
       camera={{position:[20,3,5], fov: 25}}
