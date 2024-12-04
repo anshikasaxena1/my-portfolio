@@ -55,7 +55,7 @@ const  Contact = () => {
 
       console.log(error);
 
-      alert('Something went wrong. ')
+      
     }
   )
   }
