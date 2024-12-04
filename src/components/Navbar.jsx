@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import {styles} from "../styles";
 import {navLinks} from "../constatnts"
 import {logo, menu, close} from "../assets"
-import { set } from 'mongoose';
+// import { set } from 'mongoose';
 const Navbar = () => {
   const[active, setActive]=useState('');
   const[toggle, setToggle]=useState(false);
