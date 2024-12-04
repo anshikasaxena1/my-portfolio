@@ -1,3 +1,4 @@
+// import {CollComLogo} from "..//assets"
 import {
     mobile,
     backend,
@@ -117,7 +118,7 @@ import {
   const experiences = [
     {
       title: "React.js Developer",
-      company_name: "Starbucks",
+      company_name: "Collcom.org",
       icon: starbucks,
       iconBg: "#383E56",
       date: "March 2020 - April 2021",
@@ -128,45 +129,20 @@ import {
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+    
     {
       title: "Web Developer",
-      company_name: "Shopify",
+      company_name: "Academic Project-Voting Panel",
       icon: shopify,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Jan 2024 - April 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developed a secure and efficient online voting system to streamline the voting process for organizations and institutions.",
+        "Designed a modern, user-friendly interface using React.js and styled it with Tailwind CSS to enhance user experience.",
+        "Built and optimized backend APIs with Node.js, ensuring secure and reliable handling of voter data and election results.",
+        "Integrated a database system for secure storage and retrieval of voter records and election outcomes.",
       ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+    }
   ];
   
   const testimonials = [
@@ -198,7 +174,7 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Blood Donation",
       description:
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
@@ -206,25 +182,22 @@ import {
           name: "react",
           color: "blue-text-gradient",
         },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
+        
         {
           name: "tailwind",
           color: "pink-text-gradient",
         },
       ],
       image: carrent,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/anshikasaxena1/Blood-Junction",
     },
     {
-      name: "Job IT",
+      name: "Portfolio website",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Created a dynamic portfolio website using React, Three.js for 3D visuals, and Tailwind CSS for modern, responsive styling.",
       tags: [
         {
-          name: "react",
+          name: "threejs",
           color: "blue-text-gradient",
         },
         {
@@ -232,33 +205,33 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "tailwind",
           color: "pink-text-gradient",
         },
       ],
       image: jobit,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/anshikasaxena1/my-portfolio",
     },
     {
-      name: "Trip Guide",
+      name: "URL-shortener",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Built a URL shortener using Node.js and MongoDB, with RESTful APIs for generating and managing shortened links.",
       tags: [
         {
-          name: "nextjs",
+          name: "nodejs",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "mongodb",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "restapi",
           color: "pink-text-gradient",
         },
       ],
       image: tripguide,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/anshikasaxena1/URL-Shortener",
     },
   ];
   
