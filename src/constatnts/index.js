@@ -3,6 +3,7 @@ import {
     mobile,
     backend,
     creator,
+    github,
     web,
     javascript,
     typescript,
@@ -188,7 +189,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: github,
       source_code_link: "https://github.com/anshikasaxena1/Blood-Junction",
     },
     {
@@ -209,13 +210,13 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
+      image: github,
       source_code_link: "https://github.com/anshikasaxena1/my-portfolio",
     },
     {
-      name: "URL-shortener",
+      name: "Blog-Post",
       description:
-        "Built a URL shortener using Node.js and MongoDB, with RESTful APIs for generating and managing shortened links.",
+        "A full-stack blog application built with React, Node.js, and Tailwind CSS, featuring AI-powered blog summaries using Gemini AI, dynamic search, and full CRUD functionality.",
       tags: [
         {
           name: "nodejs",
@@ -226,12 +227,12 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "restapi",
+          name: "geminiai",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/anshikasaxena1/URL-Shortener",
+      image: github,
+      source_code_link: "https://github.com/anshikasaxena1/Blog-Project",
     },
   ];
   
