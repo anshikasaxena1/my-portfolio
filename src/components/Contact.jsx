@@ -1,6 +1,5 @@
 import {useState, useRef} from 'react'
 import { motion } from 'framer-motion'
-import emailjs from '@emailjs/browser';
 
 import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
@@ -24,40 +23,44 @@ const  Contact = () => {
     setForm({...form, [name]: value})
 
   }
-  const handleSubmit=(e)=>{
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+    try {
+      const response = await fetch('https://portfolio-backend-g9n8.onrender.com/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email, 
+          message: form.message
+        })
+      });
 
-    //g6ICm1FwpK8UVIIcc
-//template_k2mt2co
-//service_4ysmg6n
-    emailjs.send('service_4ysmg6n',
-                'template_k2mt2co',
-                {
-                  from_name: form.name,
-                  to_name: 'Anshika Saxena',
-                  from_email: form.email,
-                  to_email: 'anshikasaxena310@gmail.com',
-                  message: form.message,
-                },
-                'g6ICm1FwpK8UVIIcc'
-    )
-    .then(()=>{
+      const data = await response.json();
+
+      if (response.ok) {
+        setLoading(false);
+        setForm({
+          name: '',
+          email: '',
+          message: ''
+        });
+        alert('Thank you. I will get back to you as soon as possible.');
+      } else {
+        setLoading(false);
+        alert('Something went wrong. Please try again.');
+      }
+
+    } catch (error) {
       setLoading(false);
-      alert('Thank you. I will get back to you as soon as possible.');
-      setForm({
-        name:'',
-        email:'',
-        message:'',
-      })
-    },(error)=>{
-      setLoading(false)
-
       console.log(error);
-
-      
+      alert('Something went wrong. Please try again.');
     }
-  )
+
+    
   }
 
   return (
